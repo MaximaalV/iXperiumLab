@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="materiaal.css">
+    <title>iXperiumLab - Materiaal</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li id="link1" class="link"><a href="materiaal.html">Materiaal</a></li>
+            <li id="link2" class="link"><a href="apps.html">Apps</a></li>
+        </ul>
+        <a href="https://www.ixperium.nl/materialen-lenen-ixperium-nijmegen/">
+            <button class="btnnav">Materiaal lenen</button>
+        </a>
+    </nav>
+
+        <!--section-->
+        <section class="container2">
+            <h2 class="header">Ons aanbod</h2><br>
+            <div class="zoekbar">
+                <i class="ri-search-line"></i>
+                <input type="text" id="search" placeholder="Zoeken..." autocomplete="off">
+                <button type="btn" id="search-btn">Zoeken</button>
+            </div>
+            <div class="container">
+                <!-- Images Filter Buttons Section -->
+                <div class="row mt-5" id="filter-buttons">
+                    <div class="col-12 text-center">
+                        <button class="tag btn mb-2 me-1 active" data-filter="all">Alles</button>
+                        <button class="tag btn mb-2 mx-1" data-filter="onderbouw">Onderbouw</button>
+                        <button class="tag btn mb-2 mx-1" data-filter="middenbouw">Middenbouw</button>
+                        <button class="tag btn mb-2 mx-1" data-filter="bovenbouw">Bovenbouw</button>
+                        <button class="tag btn mb-2 mx-1" data-filter="nijmegen">Nijmegen</button>
+                        <button class="tag btn mb-2 mx-1" data-filter="arnhem">Arnhem</button>
+                        <button class="tag btn mb-2 mx-1" data-filter="programmeren">Programmeren</button>
+                        <button class="tag btn mb-2 mx-1" data-filter="muziek">Muziek</button>
+                        <button class="tag btn mb-2 mx-1" data-filter="vr">Virtual Reality</button>
+                    </div>
+                </div>
+            </div>
+
+<!--        <div class="tag-row">
+                <span class="tag">Alles</span>
+                <span class="tag">Onderbouw</span>
+                <span class="tag">Middenbouw</span>
+                <span class="tag">Bovenbouw</span>
+                <span class="tag">Computational Thinking</span>
+                <span class="tag">Programmeren</span>
+                <span class="tag">Muziek</span>
+                <span class="tag">Virtual Reality</span>
+            </div>
+-->
+
+
+            <div id="nothing-alert">Niets gevonden..</div>
+            <div class="features" id="filterable-cards">
+                <div class="card" data-name="bovenbouw nijmegen arnhem muziek">
+                    <h4 class="cards">Ableton Push</h4>
+                    <img class="fotomateriaal" src="/images/push.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw onderbouw nijmegen arnhem">
+                    <h4 class="cards">Apple iPad</h4>
+                    <img class="fotomateriaal" src="/images/ipad.svg">
+                </div>
+                <div class="card" data-name="onderbouw nijmegen arnhem">
+                    <h4 class="cards">Bee-bot</h4>
+                    <img class="fotomateriaal" src="/images/beebot.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem programmeren">
+                    <h4 class="cards">BYOR</h4>
+                    <img class="fotomateriaal" src="/images/byor.svg">
+                </div>
+                <div class="card" data-name="middenbouw nijmegen">
+                    <h4 class="cards">Coding Express Dublo Trein</h4>
+                    <img class="fotomateriaal" src="/images/duplo.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw programmeren nijmegen arnhem">
+                    <h4 class="cards">COZMO</h4>
+                    <img class="fotomateriaal" src="/images/cozmo.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem">
+                    <h4 class="cards">Drones</h4>
+                    <img class="fotomateriaal" src="/images/drone.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">Greenscreen</h4>
+                    <img class="fotomateriaal" src="/images/greenscreen.svg">
+                </div>
+                <div class="card" data-name="bovenbouw vr">
+                    <h4 class="cards">Hyper VR</h4>
+                    <img class="fotomateriaal" src="/images/hypervr.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw programmeren">
+                    <h4 class="cards">Indi</h4>
+                    <img class="fotomateriaal" src="/images/indi.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw programmeren nijmegen arnhem">
+                    <h4 class="cards">Intello Smart Train</h4>
+                    <img class="fotomateriaal" src="/images/intello.svg">
+                </div>
+                <div class="card" data-name="middenbouw"> 
+                    <h4 class="cards">Kiene Klanken/Cijfers</h4>
+                    <img class="fotomateriaal" src="/images/kieneklanken.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem programmeren">
+                    <h4 class="cards">Lego Mindstorms</h4>
+                    <img class="fotomateriaal" src="/images/mindstorms.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem programmeren">
+                    <h4 class="cards">Lego Spike Essentials</h4>
+                    <img class="fotomateriaal" src="/images/spike.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem programmeren">
+                    <h4 class="cards">Lego Spike Prime</h4>
+                    <img class="fotomateriaal" src="/images/prime.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem programmeren">
+                    <h4 class="cards">Makey Makey</h4>
+                    <img class="fotomateriaal" src="/images/makey.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem vr">
+                    <h4 class="cards">Meta Quest 2</h4>
+                    <img class="fotomateriaal" src="/images/meta.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem programmeren">
+                    <h4 class="cards">Microbit</h4>
+                    <img class="fotomateriaal" src="/images/microbit.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">OSMO Coding</h4>
+                    <img class="fotomateriaal" src="/images/coding.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">OSMO Math</h4>
+                    <img class="fotomateriaal" src="/images/math.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">OSMO Numbers</h4>
+                    <img class="fotomateriaal" src="/images/numbers.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">OSMO Pizza</h4>
+                    <img class="fotomateriaal" src="/images/pizza.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">OSMO Tangram</h4>
+                    <img class="fotomateriaal" src="/images/tangram.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">OSMO Words</h4>
+                    <img class="fotomateriaal" src="/images/words.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw">
+                    <h4 class="cards">Ozobot</h4>
+                    <img class="fotomateriaal" src="/images/ozobot.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw">
+                    <h4 class="cards">Photon</h4>
+                    <img class="fotomateriaal" src="/images/photon.svg">
+                </div>
+                <div class="card" data-name="bovenbouw nijmegen arnhem">
+                    <h4 class="cards">Podcastset</h4>
+                    <img class="fotomateriaal" src="/images/podcast.svg">
+                </div>
+                <div class="card" data-name="onderbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">Qobo</h4>
+                    <img class="fotomateriaal" src="/images/qobo.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw">
+                    <h4 class="cards">Rugged Robot</h4>
+                    <img class="fotomateriaal" src="/images/ruige.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem muziek">
+                    <h4 class="cards">Specdrums</h4>
+                    <img class="fotomateriaal" src="/images/specdrums.svg">
+                </div>
+                <div class="card" data-name="bovenbouw onderbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">Verderkijkdoos</h4>
+                    <img class="fotomateriaal" src="/images/verderkijkdoos.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw nijmegen arnhem">
+                    <h4 class="cards">Virtual Tee</h4>
+                    <img class="fotomateriaal" src="/images/tee.svg">
+                </div>
+                <div class="card" data-name="bovenbouw middenbouw">
+                    <h4 class="cards">Wooden Puzzle</h4>
+                    <img class="fotomateriaal" src="/images/woodenpuzzle.svg">
+                </div>
+            </div>
+            <!-- <button class="next"><i class="ri-arrow-right-line"></i></button> -->
+        </section>
+
+    <!--footer-->
+    <footer class="container3">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <p>
+                Samen bouwen aan toekomstgericht onderwijs met ICT.
+            </p>
+            <div class="socials">
+                <a href="https://www.youtube.com/@ixperiumcentreofexpertisel9724/videos"><i class="ri-youtube-line"></i></a>
+                <a href="https://www.instagram.com/ixperiumlab.arnhemnijmegen/"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.ixperium.nl"><i class="ri-safari-line"></i></a>
+            </div>
+        </div>
+        <!--<div class="column">
+            <h4>Bedrijf</h4>
+            <a href="#">Business</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+        </div>
+        <div class="column">
+            <h4>Over Ons</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privicy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>-->
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2023 iXperium Nijmegen. All Rights Reserved.
+    </div>
+
+    <script src="materiaal.js"></script>
+    <script src="filter.js" defer></script>
+</body>
+
+</html>
